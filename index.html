@@ -23,7 +23,7 @@
     var gravity = 0.6;
     var friction = 0.7;
     // The number of platforms
-    var num = 20;
+    var num = 2;
     // The platforms
     var platforms = [];
     // Function to render the canvas
@@ -38,7 +38,7 @@
         }
     // Function to create platforms
     function createplat(){
-        for(i = 0; i > num; i++) {
+        for(i = 0; i < num; i++) {
             platforms.push(
                 {
                 x: 100 * i,
@@ -129,6 +129,10 @@
     ctx=canvas.getContext("2d");
     ctx.canvas.height = 2000;
     ctx.canvas.width = 2000;
+    createplat();
+    createplat();
+    createplat();
+    createplat();
     createplat();
     // Adding the event listeners
     document.addEventListener("keydown",keydown);
