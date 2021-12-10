@@ -23,7 +23,7 @@
     var gravity = 0.6;
     var friction = 0.7;
     // The number of platforms
-    var num = 2;
+    var num = 20;
     // The platforms
     var platforms = [];
     // Function to render the canvas
@@ -127,8 +127,8 @@
     }
     canvas=document.getElementById("canvas");
     ctx=canvas.getContext("2d");
-    ctx.canvas.height = 270;
-    ctx.canvas.width = 270;
+    ctx.canvas.height = 2000;
+    ctx.canvas.width = 2000;
     createplat();
     // Adding the event listeners
     document.addEventListener("keydown",keydown);
